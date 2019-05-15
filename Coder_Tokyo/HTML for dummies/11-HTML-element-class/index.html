@@ -1,0 +1,39 @@
+<!-- HTML Element
+.children[]         (Element): tập hợp các thẻ con bên trong
+i.textContent = "" ;     (Node): thêm nội dung text vào thẻ html <p>, <botton> vv
+    
+.appendChild()    (Node): thêm thẻ con vào cuối 
+.remove()         (Element): 
+document.creatElement(): thêm 1 thẻ bất kì-->
+
+<!-- Dog <---Vietnamese dog <-- Phu Quoc dog  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO List</title>
+</head>
+<body>
+    <h1>TODO List</h1>
+
+    <ul class="todo-list">
+        <li>Haircute</li>
+        <li>Luch with Sora</li>
+        <li>Dinner with Maria</li>
+    </ul>
+    <script type="text/javascript">
+    //insert a new todo to the list
+    //update content of a list item
+    // remove the last item from the list
+    var newTodo = document.createElement('li');
+    newTodo.textContent = 'Watch Tv';
+    var ul = document.getElementsByClassName("todo-list")[0]
+    ul.appendChild(newTodo);
+    ul.children[2].textContent = "Play Game";
+    ul.lastChild.remove()
+    </script>
+</body>
+</html>

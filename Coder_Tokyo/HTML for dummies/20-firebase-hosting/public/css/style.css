@@ -1,0 +1,326 @@
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*
+Header css
+*/
+.header {
+    box-sizing: border-box;
+    height: 170px;
+    padding: 50px 0;
+    max-height: 170px;
+}
+.header .logo {
+
+}
+.header nav.main-menu {
+
+}
+.header nav.main-menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+.header nav.main-menu li {
+    float: left;
+}
+.header nav.main-menu a{
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 20px;
+    color: #8d8d8d;
+}
+.header nav.main-menu ul i {
+    font-size: 12px;
+    color:  #8d8d8d;
+}
+/*
+Banner
+*/
+.banner {
+    margin-top: -170px;
+    height: 936px;
+    width: 100%;
+    background: url("../images/banner.png") top center no-repeat;
+    display: table;
+}
+.banner h1 {
+    font-size: 83px;
+    color: #000000;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.banner h1 span {
+    color: #f66c27;
+}
+/*Intro 1
+*/
+.intro-first {
+    height: 770px;
+}
+.intro-first .row {
+    width: 100%;
+}
+.intro-first .intro-first-image {
+    padding: 0px 5px 15px 0px;
+    position: relative;
+}
+.intro-first .intro-first-image .img-intro-1 {
+    position: absolute;
+    top: 149px;
+    left: 100px;
+    width: 535px;
+    height: 361px;
+    box-shadow: 10px 10px 15px #e4e4e4;
+}
+.intro-first .intro-first-image .img-intro-2 {
+    position: absolute;
+    top: 448px;
+    left: 348px;
+    width: 314px;
+    height: 228px;
+    box-shadow: 10px 10px 15px #e4e4e4;
+    outline: 5px solid white;
+}
+.intro-first .intro-first-image .background-intro {
+    display: block;
+    position: absolute;
+    transform: rotate(70deg);
+    width: 300px;
+    height: 500px;
+    background-color: #f3f3f3;
+    top: -150px;
+    left: -50px;
+    z-index: -1;
+}
+.intro-first-content {
+    padding : 200px 200px 0px 25px;
+}
+.intro-first-content h1 {
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.intro-first-content .intro-menu {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.intro-first .intro-menu li {
+    display: inline-block;
+    padding: 20px 50px 20px 0px;
+}
+.intro-first .intro-menu a {
+    color: #eb7c43;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+.intro-first-content p {
+    opacity: 0.6;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.intro-first-content .read-more a {
+    display: inline-block;
+    color: white;
+    background: #eb7c43;
+    border-radius: 50px;
+    width:188px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 18px;
+}
+/* Help
+*/
+.help .container {
+    padding : 15px 50px 50px 100px;
+    vertical-align: middle;
+}
+.help .help-option {
+    display: inline-block;
+    width: 300px;
+    height: 375px;
+    text-align: center;
+    margin-top: 70px;
+    padding: 30px;
+}
+.help-option .fa {
+    font-size: 40px;
+    padding: 50px;
+}
+.help .help-2 i {
+    color: #f48146
+}
+.help .help-option:hover  {
+    box-shadow: 10px 10px 10px 5px #e4e4e4;
+}
+.help a {
+    opacity: 0.6;
+}
+/*map
+*/
+.main-content .describe-map h1 {
+    text-align: center;
+    font-size: 45px;
+    padding: 66px;
+}
+.main-content .describe-map p {
+    text-align: center;
+    display: flex;
+  justify-content: center;
+    width: 875px;
+    margin: 0 auto;
+    font-size: 15px;
+    opacity: 0.6;
+}
+.main-content .subscribe {
+    height: 360px;
+    background: linear-gradient(to right, #f66c27, #f09f76);
+    position: relative;
+}
+.main-content .subscribe h1 {
+    font-size:150px;
+    line-height: 360px;
+    opacity: 0.2;
+    color: #f7cab5;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.main-content .subscribe p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 100px;
+}
+.main-content .subscribe .content-form {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%);
+}
+.main-content .subscribe .content-form .send-email{
+    height: 40px;
+}
+.main-content .subscribe .content-form .send-email input {
+    width: 480px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 20px;
+    margin-left: 10px;
+    background-color: #f3f2f2;
+    border: none
+}
+.main-content .subscribe .content-form .send-email input[type="submit"] {
+    width: 150px;
+    float: right;
+    padding: 0px;
+    background-color: #f48146;
+    box-shadow: 5px 5px 15px #be6c43;
+}
+/*
+Footer CSS
+*/
+.footer {
+    background: linear-gradient(to right, #eb7c43 55%, #ffffff 45%);
+}
+.footer .contact-form {
+    background: #eb7c43;
+    box-sizing: border-box;
+    height: 700px;
+}
+.contact-form .content-form {
+    background: #ffffff;
+    padding: 60px;
+    margin-top: 138px;
+    margin-right: 100px;
+    box-shadow: 5px 5px 20px rgb(88, 88, 88);
+}
+.content-form input, textarea {
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    color:  #8d8d8d;
+    width: 100%;
+    color: #777777;
+    font-size: 15px;
+}
+.first-row input{
+    width: 40%;
+}
+
+.first-row::after {
+    content: "";
+    clear: both;
+}
+.first-row input[name="email"] {
+    float: right;
+}
+.contact-form textarea {
+    height: 130px;
+}
+
+.content-form input:focus, textarea:focus {
+    outline: none;
+}
+.contact-form-row {
+    margin-bottom: 25px;
+}
+.submit-row {
+    text-align: center;
+}
+.content-form input[type="submit"] {
+    background: #eb7c43;
+    color: #ffffff;
+    display: inline-block;
+    width: auto;
+    padding: 6px 20px;
+    border-radius: 32px;
+    font-size: 18px;
+}
+
+
+.contact-info {
+    padding: 100px 50px 100px 100px; 
+}
+.contact-info h3 {
+    font-size: 45px
+}
+.contact-info h4 {
+    font-size: 25px;
+    padding: 15px 0px;
+}
+.contact-info p {
+    padding-right: 50px;
+}
+.line-contact-info span {
+    color: #eb7c43;
+}
+.contact-info .social-icon {
+    padding: 0px;
+}
+.contact-info .social-icon i {
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: white
+}
+.contact-info .social-icon .fa-twitter {
+    background-color: #f48146;
+}
+.contact-info .social-icon .fa-linkedin, .contact-info .social-icon .fa-youtube {
+    background-color: #2faaf1;
+}

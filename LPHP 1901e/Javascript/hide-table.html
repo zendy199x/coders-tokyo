@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <style>
+    table, th, td{
+        text-align: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    </style>
+</head>
+<body>
+    <table id="tab">
+        <tr>
+            <th style="width: 200px">Tên</th>
+            <th style="width: 100px">Năm sinh</th>
+        </tr>
+        <tr>
+            <td>Trịnh Tiến Tùng</td>
+            <td>1995</td>
+        </tr>
+        <tr>
+            <td style="width: 100px">Trịnh Tiến Quân</td>
+            <td>2001</td>
+        </tr>
+    </table>
+    <input id="option" type="button" value="Hide Table"/>
+    <script>
+        var option = document.getElementById('tab')
+        document.getElementById('option').onclick = function () {
+            if (option.style.display !== 'none') {
+                option.style.display = 'none';
+                this.value = 'Show Table'
+            } else {option.style.display = 'table'; this.value = 'Hide Table'}
+            return option.style.display, this.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        font-family: sans-serif;
+        color: #333;
+    }
+    #menu ul {
+        list-style-type: none;
+        background-color: #1f568B;
+        text-align: center;
+    }
+    #menu ul li {
+        color: aliceblue;
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+    }
+    #menu ul li a {
+        color: #f1f1f1;
+        text-decoration: none;
+        display: block;
+    }
+    #menu ul li a:hover {
+        background: #f1f1f1;
+        color: #333;
+    }
+    #menu ul li > .table {
+        display: none;
+        position: absolute;
+    }
+    #menu ul li:hover .table {
+        display: table;
+        width: 600px;
+        height: 100px;
+        background-color: #1f568B;
+    }
+    .table .submenu {
+        display: table-row;
+        margin: 10px;
+        width: 50px;
+        height: 40px;
+    }
+    .table .cel {
+        display: table-cell;
+        border: 1px solid white;
+        border-collapse: collapse;
+    }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Item1</a></li>
+            <li>
+                <a href="#">Item2</a>
+                <div class="table">                
+                <div class="submenu">
+                        <div class="cel"><a href="#">Item2.a</a></div>
+                        <div class="cel"><a href="#">Item2.b</a></div>
+                        <div class="cel"><a href="#">Item2.c</a></div>
+                        <div class="cel"><a href="#">Item2.d</a></div>                      
+                </div>
+                <div class="submenu">
+                        <div class="cel"><a href="#">Item2.e</a></div>
+                        <div class="cel"><a href="#">Item2.f</a></div>
+                        <div class="cel"><a href="#">Item2.g</a></div>
+                        <div class="cel"><a href="#">Item2.h</a></div>
+                </div>
+                </div>
+            </li>
+            <li><a href="#">Item3</a></li>
+            <li><a href="#">Item4</a></li>
+            <li><a href="#">Item5</a></li>
+        </ul>
+    </div>
+</body>
+</html>

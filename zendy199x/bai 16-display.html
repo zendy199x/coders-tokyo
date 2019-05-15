@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .inline {
+            display: block;
+        }
+        .block {
+            display: inline;
+        }
+        .list {
+            display: list-item;
+            margin-left: 40px;
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            display: table;
+        }
+        .row {
+            display: table-row;
+        }
+        .col {
+            display: table-cell;
+            background: red;
+            border: 1px solid black
+        }
+    </style>
+</head>
+<body>
+    <div class="inline">Div1</div>
+    <div class="inline">Div2</div>
+    <span class="block">inline1</span>
+    <span class="block">inline2</span>
+
+    <div class="list">
+    <div>item1</div>
+    <div>item2</div>
+    <div>item3</div>
+    </div>
+
+    <div class="container">
+
+    <div class="row">
+        <div class="col">item1</div>
+        <div class="col">item2</div>
+        <div class="col">item3</div>
+    </div>
+    <div class="row">
+        <div class="col">item1</div>
+        <div class="col">item2</div>
+        <div class="col">item3</div>
+    </div>
+    </div>
+</body>
+</html>

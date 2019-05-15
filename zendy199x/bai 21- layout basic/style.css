@@ -1,0 +1,105 @@
+/*Style cơ bản trong website*/
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.254;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    transition: all 0.5s;
+    color: aliceblue;
+}
+/* Chia cột cho website*/
+#container {
+    padding-left: 200px;
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+#menu {
+    position: fixed;
+    height: 100%;
+    background-color: #198cda;
+    width: 150px;
+    left: 0;
+}
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#menu ul li {
+    line-height: 2.9em;
+    height: 2.9em;
+    transition: all 1s;
+    position: relative;
+}
+#menu ul li a {
+    display: block;
+    padding: 0 1em;
+    border-bottom: 1px solid white;
+}
+#menu ul li:hover {
+    background-color: #265778;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    background-color: #198cda
+}
+.submenu li {
+    width: 150px;
+    border-left: 1px dotted white;
+    transition: all 1s;
+}
+#menu ul  li:hover .submenu {
+    display: block;
+}
+#content {
+    padding: 1em 5em;
+}
+#header, .call-to-action {
+    text-align: center;
+}
+#slogan {
+    color: #bfcfda;
+    font-size: 0.9em;
+}
+.call-to-action {
+    background-color: #eff3f5
+}
+.row {
+    overflow: hidden;
+    margin: 1.5em auto;
+}
+.row .col {
+    float: left;
+    width: 31%;
+    margin-right: 2em;
+}
+.row .col:last-child {
+    float: right;
+    margin-right: 0;
+}
+.row .col img {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+#footer {
+    font-size: 85%;
+    padding: 1em 3em;
+    color: #bfcfda
+}
+
+

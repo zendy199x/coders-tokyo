@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    .menu ul {
+        background-color: burlywood;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        width: 100px;
+    }
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+        width: 100px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+        border: 1px solid white;
+        display: block;
+    }
+    .menu ul li:hover {
+        background-color: brown;
+        color:wheat;
+    }
+    .menu .submenu {
+        position: absolute;
+        display: none;
+    }
+    .menu ul li:hover .submenu {
+        display: block;
+        left: 100px;
+        top: 0px;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Item1</a>
+                <ul class="submenu">
+                        <li><a href="#">Item1.1</a>
+                        <li><a href="#">Item1.2</a>
+                        <li><a href="#">Item1.3</a>
+                        <li><a href="#">Item1.4</a>
+                </ul>
+            </li>
+            <li><a href="#">Item2</a></li>
+            <li><a href="#">Item3</a></li>
+            <li><a href="#">Item4</a></li>
+        </ul>
+    </div>
+</body>
+</html>

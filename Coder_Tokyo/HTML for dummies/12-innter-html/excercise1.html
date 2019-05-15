@@ -1,0 +1,23 @@
+<!-- 
+- Sử dụng getElementsByTagName() để lấy ra danh sách các <p> có class là 'foo'
+- Lặp qua các phần tử và thay đổi nội dung của từng phần tử bằng cách append (thêm vào cuối) một đường link tới coders.tokyo site
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p class="foo">Water</p>
+    <p class="foo">Cake</p>
+    <p class="cook">Tomato</p>
+    <p class="foo">Lolipop</p>
+<script>
+    $('p.foo').append("<a href = 'https://coders.tokyo'>Coders.tokyo</a>")
+</script>
+</body>
+</html>
